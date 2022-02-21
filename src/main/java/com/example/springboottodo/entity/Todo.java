@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class Todo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
     private String title;
-    private boolean done;
+    private boolean done = false;
 }
